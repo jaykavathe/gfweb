@@ -56,7 +56,7 @@ export default function Header() {
         <a href="#home" onClick={(e) => scrollToSection(e, '#home')} className="relative">
           <div className="relative px-6 py-2 rounded-full bg-white">
             <BorderBeam />
-            <span className="text-2xl font-heading font-bold" style={{ color: '#76356D' }}>
+            <span className="text-2xl font-heading font-extrabold" style={{ color: '#76356D' }}>
               GoFlirt AI
             </span>
           </div>
@@ -68,10 +68,10 @@ export default function Header() {
                 <a
                   href={item.href}
                   onClick={(e) => scrollToSection(e, item.href)}
-                  className={`relative text-lg font-bold tracking-wide transition-all duration-300 group ${
+                  className={`relative text-lg font-extrabold tracking-wide transition-all duration-300 group ${
                     activeSection === item.name.toLowerCase()
                       ? 'text-[#76356D]'
-                      : 'text-gray-600 hover:text-[#76356D]'
+                      : 'text-[#76356D]/60 hover:text-[#76356D]'
                   }`}
                 >
                   {item.name}

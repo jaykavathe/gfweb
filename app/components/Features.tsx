@@ -90,10 +90,10 @@ export default function Features() {
     <section id="features" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <h2 
-          className="text-4xl font-heading font-bold text-center mb-12"
+          className="text-4xl font-heading font-extrabold text-center mb-16"
           style={{ color: '#76356D' }}
         >
-          Features
+          Key Features
         </h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
@@ -149,7 +149,7 @@ export default function Features() {
                     >
                       {selectedFeature.content.title}
                     </h3>
-                    <p className="text-gray-600 mb-6 text-lg">
+                    <p className="text-[#76356D] mb-6 text-lg font-bold">
                       {selectedFeature.content.description}
                     </p>
                     <div className="grid grid-cols-1 gap-4">
@@ -162,7 +162,7 @@ export default function Features() {
                             className="w-5 h-5 flex-shrink-0"
                             style={{ color: '#76356D' }}
                           />
-                          <span className="text-gray-700">{benefit}</span>
+                          <span className="text-[#76356D] font-bold">{benefit}</span>
                         </div>
                       ))}
                     </div>

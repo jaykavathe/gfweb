@@ -15,77 +15,50 @@ export default function ContactForm() {
           className="max-w-2xl mx-auto"
         >
           <h2 
-            className="text-4xl font-heading font-bold text-center mb-4"
+            className="text-4xl font-heading font-extrabold text-center mb-8"
             style={{ color: '#76356D' }}
           >
             Get in Touch
           </h2>
-          <p 
-            className="text-xl font-medium text-center mb-12"
-            style={{ color: '#76356D' }}
-          >
+          <p className="text-[#76356D] text-center mb-12 font-bold">
             Have questions about GoFlirt AI? We'd love to hear from you.
           </p>
 
           <div className="bg-white rounded-2xl p-8 shadow-lg">
             <form className="space-y-6">
               <div>
-                <label 
-                  className="block mb-2 text-lg font-semibold"
-                  style={{ color: '#76356D' }}
-                >
-                  Name
-                </label>
+                <label className="block text-[#76356D] mb-2 font-bold">Name</label>
                 <div className="relative">
                   <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                    <UserIcon 
-                      className="h-6 w-6"
-                      style={{ color: '#76356D' }}
-                    />
+                    <UserIcon className="h-5 w-5 text-gray-400" />
                   </div>
                   <input
                     type="text"
-                    className="block w-full pl-12 pr-4 py-4 text-lg font-medium border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#76356D] focus:border-transparent transition-all duration-200"
-                    style={{ color: '#76356D' }}
+                    className="block w-full pl-10 pr-3 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#76356D] focus:border-transparent transition-all duration-200"
                     placeholder="Your name"
                   />
                 </div>
               </div>
 
               <div>
-                <label 
-                  className="block mb-2 text-lg font-semibold"
-                  style={{ color: '#76356D' }}
-                >
-                  Email
-                </label>
+                <label className="block text-[#76356D] mb-2 font-bold">Email</label>
                 <div className="relative">
                   <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                    <EnvelopeIcon 
-                      className="h-6 w-6"
-                      style={{ color: '#76356D' }}
-                    />
+                    <EnvelopeIcon className="h-5 w-5 text-gray-400" />
                   </div>
                   <input
                     type="email"
-                    className="block w-full pl-12 pr-4 py-4 text-lg font-medium border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#76356D] focus:border-transparent transition-all duration-200"
-                    style={{ color: '#76356D' }}
+                    className="block w-full pl-10 pr-3 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#76356D] focus:border-transparent transition-all duration-200"
                     placeholder="your@email.com"
                   />
                 </div>
               </div>
 
               <div>
-                <label 
-                  className="block mb-2 text-lg font-semibold"
-                  style={{ color: '#76356D' }}
-                >
-                  Message
-                </label>
+                <label className="block text-[#76356D] mb-2 font-bold">Message</label>
                 <textarea
                   rows={4}
-                  className="block w-full px-4 py-4 text-lg font-medium border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#76356D] focus:border-transparent transition-all duration-200"
-                  style={{ color: '#76356D' }}
+                  className="block w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#76356D] focus:border-transparent transition-all duration-200"
                   placeholder="Your message..."
                 />
               </div>
@@ -94,13 +67,13 @@ export default function ContactForm() {
                 type="submit"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                className="w-full py-4 px-8 rounded-lg text-white text-lg font-bold flex items-center justify-center space-x-3 shadow-lg transform hover:-translate-y-1 transition-all duration-300"
+                className="w-full py-3 px-6 rounded-lg text-white font-medium flex items-center justify-center space-x-2 shadow-lg"
                 style={{ 
                   background: 'linear-gradient(to right, #76356D, #a14d99)'
                 }}
               >
                 <span>Send Message</span>
-                <PaperAirplaneIcon className="h-6 w-6" />
+                <PaperAirplaneIcon className="h-5 w-5" />
               </motion.button>
             </form>
           </div>

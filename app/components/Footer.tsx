@@ -1,6 +1,5 @@
 'use client'
 
-import Link from 'next/link'
 import { BorderBeam } from "./magicui/border-beam"
 
 const navItems = [
@@ -35,7 +34,7 @@ export default function Footer() {
                 colorTo="rgba(255,255,255,0.6)" 
                 borderWidth={3}
               />
-              <span className="text-2xl font-heading font-bold text-white">
+              <span className="text-2xl font-heading font-extrabold text-white">
                 GoFlirt AI
               </span>
             </div>
@@ -47,7 +46,7 @@ export default function Footer() {
                   <a
                     href={item.href}
                     onClick={(e) => scrollToSection(e, item.href)}
-                    className="text-white hover:text-white/80 transition-opacity duration-300 text-lg font-bold tracking-wide"
+                    className="text-white hover:opacity-80 transition-opacity duration-300 text-lg font-bold"
                   >
                     {item.name}
                   </a>
@@ -60,15 +59,15 @@ export default function Footer() {
               <a
                 key={social}
                 href="#"
-                className="text-white hover:text-white/80 transition-opacity duration-300"
+                className="text-white/90 hover:text-white transition-opacity duration-300 font-bold"
               >
                 {social}
               </a>
             ))}
           </div>
         </div>
-        <div className="text-center mt-8 text-white/80">
-          © {new Date().getFullYear()} GoFlirt AI. All rights reserved.
+        <div className="text-center mt-8 text-white/90 font-bold">
+          © 2024 GoFlirt AI. All rights reserved.
         </div>
       </div>
     </footer>

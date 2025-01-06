@@ -52,7 +52,7 @@ export default function DevelopmentStatus() {
     <section id="roadmap" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <h2 
-          className="text-4xl font-heading font-bold text-center mb-16"
+          className="text-4xl font-heading font-extrabold text-center mb-16"
           style={{ color: '#76356D' }}
         >
           Development Status
@@ -89,15 +89,15 @@ export default function DevelopmentStatus() {
             <div className="space-y-4">
               <div className="flex items-center space-x-3">
                 <ClockIcon className="w-6 h-6 text-gray-600" />
-                <span className="text-lg">Expected Launch: {developmentStatus.launchDetails.date}</span>
+                <span className="text-lg font-bold">{developmentStatus.launchDetails.date}</span>
               </div>
               <div className="flex items-center space-x-3">
                 <DevicePhoneMobileIcon className="w-6 h-6 text-gray-600" />
-                <span className="text-lg">Platform: {developmentStatus.launchDetails.platform}</span>
+                <span className="text-lg font-bold">{developmentStatus.launchDetails.platform}</span>
               </div>
               <div className="flex items-center space-x-3">
                 <CogIcon className="w-6 h-6 text-gray-600" />
-                <span className="text-lg">Current Status: {developmentStatus.launchDetails.status}</span>
+                <span className="text-lg font-bold">{developmentStatus.launchDetails.status}</span>
               </div>
             </div>
           </motion.div>
@@ -144,7 +144,7 @@ export default function DevelopmentStatus() {
                       whileInView={{ opacity: 1, y: 0 }}
                       transition={{ delay: index * 0.1 }}
                       viewport={{ once: true }}
-                      className="flex items-center space-x-2 text-gray-600"
+                      className="flex items-center space-x-2 text-[#76356D]"
                     >
                       <span className="w-2 h-2 bg-green-500 rounded-full" />
                       <span>{feature}</span>
@@ -167,7 +167,7 @@ export default function DevelopmentStatus() {
                       whileInView={{ opacity: 1, y: 0 }}
                       transition={{ delay: index * 0.1 }}
                       viewport={{ once: true }}
-                      className="flex items-center space-x-2 text-gray-600"
+                      className="flex items-center space-x-2 text-[#76356D]"
                     >
                       <span className="w-2 h-2 bg-blue-500 rounded-full" />
                       <span>{feature}</span>
@@ -190,7 +190,7 @@ export default function DevelopmentStatus() {
                       whileInView={{ opacity: 1, y: 0 }}
                       transition={{ delay: index * 0.1 }}
                       viewport={{ once: true }}
-                      className="flex items-center space-x-2 text-gray-600"
+                      className="flex items-center space-x-2 text-[#76356D]"
                     >
                       <span className="w-2 h-2 bg-orange-500 rounded-full" />
                       <span>{feature}</span>

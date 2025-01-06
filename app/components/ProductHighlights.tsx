@@ -23,7 +23,7 @@ export default function ProductHighlights() {
     <section className="py-20">
       <div className="container mx-auto px-4">
         <h2 
-          className="text-4xl font-heading font-bold text-center mb-12"
+          className="text-4xl font-heading font-extrabold text-center mb-12"
           style={{ color: '#76356D' }}
         >
           For every Scenario
@@ -44,7 +44,7 @@ export default function ProductHighlights() {
               >
                 {feature.title}
               </h3>
-              <p className="text-center text-gray-600">{feature.description}</p>
+              <p className="text-center text-[#76356D] font-bold">{feature.description}</p>
             </div>
           ))}
         </div>
