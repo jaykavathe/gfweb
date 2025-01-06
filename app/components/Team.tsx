@@ -1,13 +1,16 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import Image from 'next/image'
+import { UserCircleIcon } from '@heroicons/react/24/outline'
+import { 
+  LinkedInIcon, 
+  TwitterIcon 
+} from '@heroicons/react/24/outline'
 
 const founders = [
   {
     name: "Founder Name",
     role: "CEO & Co-Founder",
-    image: "/founders/founder1.jpg",
     bio: "Your founder bio here. Describe their journey, vision, and what drives them to revolutionize the dating industry through AI technology.",
     socials: {
       linkedin: "#",
@@ -17,7 +20,6 @@ const founders = [
   {
     name: "Founder Name",
     role: "CTO & Co-Founder",
-    image: "/founders/founder2.jpg",
     bio: "Your founder bio here. Share their technical expertise, innovations, and passion for creating AI solutions that enhance human connections.",
     socials: {
       linkedin: "#",
@@ -49,12 +51,9 @@ export default function Team() {
             >
               <div className="relative h-80 w-full bg-gradient-to-br from-[#76356D] to-[#a14d99] p-8">
                 <div className="absolute inset-0 flex items-center justify-center p-8">
-                  <div className="relative w-full h-full rounded-xl overflow-hidden border-4 border-white shadow-md">
-                    <Image
-                      src={founder.image}
-                      alt={founder.name}
-                      fill
-                      className="object-cover"
+                  <div className="relative w-full h-full rounded-xl overflow-hidden border-4 border-white shadow-md bg-white/10 flex items-center justify-center">
+                    <UserCircleIcon 
+                      className="w-full h-full text-white/80"
                     />
                   </div>
                 </div>
@@ -67,24 +66,46 @@ export default function Team() {
                 >
                   {founder.name}
                 </h3>
-                <p className="text-gray-600 text-center mb-6">{founder.role}</p>
+                <p 
+                  className="text-xl font-semibold text-center mb-8"
+                  style={{ color: '#76356D' }}
+                >
+                  {founder.role}
+                </p>
                 
-                <div className="flex justify-center space-x-4 mb-6">
+                <div className="flex justify-center space-x-6 mb-8">
                   <a 
                     href={founder.socials.linkedin}
-                    className="text-gray-600 hover:text-[#76356D] transition-colors duration-300"
+                    className="text-gray-400 hover:text-[#76356D] transition-colors duration-300"
+                    aria-label="LinkedIn Profile"
                   >
-                    LinkedIn
+                    <svg 
+                      className="w-6 h-6"
+                      fill="currentColor" 
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                    </svg>
                   </a>
                   <a 
                     href={founder.socials.twitter}
-                    className="text-gray-600 hover:text-[#76356D] transition-colors duration-300"
+                    className="text-gray-400 hover:text-[#76356D] transition-colors duration-300"
+                    aria-label="Twitter Profile"
                   >
-                    Twitter
+                    <svg 
+                      className="w-6 h-6"
+                      fill="currentColor" 
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                    </svg>
                   </a>
                 </div>
                 
-                <p className="text-gray-700 text-center leading-relaxed">
+                <p 
+                  className="text-lg font-medium text-center leading-relaxed"
+                  style={{ color: '#76356D' }}
+                >
                   {founder.bio}
                 </p>
               </div>
